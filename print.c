@@ -32,7 +32,6 @@ void print_graph() {
             float y = ymin + i * ystep;
             x *= aspect * pixelaspect;
 
-            // Проверка, принадлежит ли точка графику функции
             if (fabs(y - (function)) * aspect * pixelaspect < width_pen)
                 field[i][j] = 1;
             else
